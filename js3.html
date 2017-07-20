@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript variables</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var x=10;
+			var y=20;
+			var strName="Sadagopan";
+			var strAge=42;
+			document.write((x+y)+"<br />");
+			document.write ("My name is "+strName+" and i am "+strAge+ " Years old " +"<br />" );
+			function Msg()
+			{
+				alert("Hello!!! How are you ?");
+				alert("I am "+(x+y)+" Years old 12 years back");
+				document.write("I am "+(x+y)+" Years old 12 years back");
+			}
+			function Add(x,y)
+			{
+				alert ("Sum of given number is "+(x+y));
+			}
+		</script>
+		<form>
+			<input type="button" value="Click me" onclick="Msg()">
+			<input type="button" value="Add 10+20" onclick="Add(10,20)">
+		</form>
+	</body>
+</html>
