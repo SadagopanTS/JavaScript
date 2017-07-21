@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Switch command</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+				function fnPrint()
+				{
+					var x="Saturday"
+					switch (x) 
+					{
+						case "Monday" :
+							document.write ("First day of the week");
+							break;
+						case "Tuesday" :
+							document.write ("Second day of the week");
+							break;
+						case "Wednesday" :
+							document.write ("Third day of the week");
+							break;
+						case "Thursday" :
+							document.write ("Fourth day of the week");
+							break;
+						case "Friday" :
+							document.write ("Fifth day of the week");
+							break;
+						default :
+							document.write("Not a weekday");
+
+					}	
+					for (x=1;x<11;x++){
+						document.write("<br /> Hello " + x);
+					}
+					while(x<15)
+					{
+						document.write("<br /> writing from inside while loop " + x) ;
+						x++ ;
+					}
+				}
+		</script>
+		<Form>
+			<Input Type="Button" Value="test" onclick="fnPrint()">
+		</Form>
+	</body>
+</html>
