@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Local and Global Variables</title>
+</head>
+	<script type="text/javascript">
+		var x="Global variable"
+		function fnPrint()
+		{
+			document.write(x+"<br />");
+			x="Changed Global Variable"
+		}
+		fnPrint();
+		document.write(x +"<br />");
+		var n =5
+		document.write (n++ +"<br />");
+		document.write (n-- +"<br />");
+		n += 100;
+		n -=50;
+		n *=5;
+		n /=5;
+		document.write (n);
+		n++;
+		if (n!=55) {
+			document.write ("<br />"+"Number is 55");
+			}
+		else{
+			document.write ("<br />"+"Number is not 55");
+		}
+		var y="Tiruvanaikovil",z="Trichy";
+		if ((y=="Srirangam") && (z=="Trichy")) 
+		{
+			document.write ("<br />"+"Welcome to Srirangam");
+		}
+		if ((y!="Srirangam") || (z=="Trichy")) 
+		{
+			document.write ("<br />"+"Welcome to Trichy");
+		}
+	</script>
+</html>
