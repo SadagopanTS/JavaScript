@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Objects </title>
+		<script type="text/javascript">
+			function person(name,age)
+			{
+				this.name = name;
+				this.age = age;
+			}
+			var tss=new person("Sadagopan",42);
+			var tsa=new person("Andal S",37);
+			var  dog = {legs:4,tail:1};
+			var  hen = {legs:2, tail:5};
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var x="I am Sadagopan Working for DXC";
+			document.write (x.length + "<br />"); 
+			document.write (tss.name + ","+ tss.age +"<br />");
+			document.write (tsa.name + ","+ tsa.age);
+			document.write ("<br /> dog has " + dog.legs + " legs and " + dog.tail + " tail ");
+			if (hen.tail==0)
+			{
+				document.write ("<br /> hen has " + hen.legs + " legs and hen has no tail <br />");
+			}
+			else
+			{
+				document.write ("<br /> hen has " + hen.legs + " legs and " + hen.tail + " tail <br />");
+			}
+		</script>
+	</body>
+</html>
