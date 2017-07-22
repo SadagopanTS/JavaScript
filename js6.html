@@ -37,10 +37,15 @@
 						document.write("<br /> writing from inside while loop " + x) ;
 						x++ ;
 					}
-				}
+					do {
+						document.write ("<br /> Hello " + x);
+						x++;	
+						}while (x<31);
+				}	
 		</script>
 		<Form>
-			<Input Type="Button" Value="test" onclick="fnPrint()">
+			<Input Type="Button" Value="test" onclick="fnPrint()"> <br />
+			<Input Type="Button" Value="Click Me" onclick="alert ('Hello world Javascript'); alert ('	second message')"> <br />
 		</Form>
 	</body>
 </html>
