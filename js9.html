@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arrays </title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var day = new Array("Mon","Tue","Wed","Thu","Fri","Sat","Sun");
+			day.reverse();
+			day.push("Ex Sun1","Ex Sun2");
+			var str1=day.join(" - ");
+			document.write(str1 + "<br />");
+			day.sort();
+			var str2=day.join(" - ");
+			document.write(str2 + "<br />");
+			for (x=0;x<7;x++)
+			{
+				document.write(day[x]);
+			}
+			var inpAr = new Array(3);
+			for (i=0;i<3;i++)
+			{
+				inpAr[i]=prompt("Enter some value for array ","");
+			}
+			document.write("<br />" + inpAr.join(" "));
+			var n = prompt("Enter a number ","");
+			document.write (" Square root of "+ n +" is " + Math.sqrt(n));
+		</script>
+	</body>
+</html>

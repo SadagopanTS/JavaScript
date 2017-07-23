@@ -45,11 +45,17 @@
 			
 			var daymonth = day.concat(month);
 			document.write ("<br />");
+			document.write ("<br />");
 			for (i=0;i<daymonth.length;i++)
 			{
 				document.write("<br /> " + daymonth[i]);
 			}
 			
+			var strMonth=month.join();
+			document.write ("<br /> " + strMonth);
+			month.pop()
+			var strMonth=month.join();
+			document.write ("<br /> " + strMonth);
 			
 		</script>
 	</body>

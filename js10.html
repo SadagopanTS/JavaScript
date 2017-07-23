@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+</html>
+	<head>
+		<title>Date</title>
+		<style type="text/css">
+			div {border : 2px solid red;
+				 width:250px;
+				 height:1000px;
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function fnPrintTime(){
+				var now = new Date();
+				var hours = now.getHours();
+				if (hours > 12 )
+				{
+					hours=hours-12;
+					var ampm="PM";
+				}
+				else
+				{	
+					var ampm="AM";
+				}
+				var min = now.getMinutes();
+				var sec = now.getSeconds();
+				document.write (hours+":"+min+":"+sec+" "+ampm+"<br />");
+			}
+			setInterval("fnPrintTime()",1000);		
+		</script>
+	</body>
+</html>
