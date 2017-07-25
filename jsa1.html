@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!-- 
+		<script type="text/javascript">
+			var peoplefactory = function (name,age,state){
+				temp={};
+				temp.name=name;
+				temp.age=age;
+				temp.state=state;
+				temp.PrintPerson = function (){
+					console.log (this.name + "," + this.age +"," + this.state);
+				};
+				return temp;
+			};
+			var p1=peoplefactory('tss',42,'tamilnadu');
+			var p2=peoplefactory('sing',27,'UP');
+			p1.PrintPerson();
+			p2.PrintPerson();
+		</script
+	</head>
+	-->
+	<script type="text/javascript">
+		var Employee = function(name,age,state){
+		};
+		Employee.prototype.name="no name";
+		Employee.prototype.age= 0;
+		Employee.prototype.state="no state";
+		Employee.prototype.PrintPerson=function(){
+			console.log (this.name + "," + this.age + ","+ this.state);
+		}
+
+		var E1 = new Employee();
+		E1.name="TSS";
+		E1.age=42;
+		E1.state="TN";
+		E1.PrintPerson();
+	</script>
+	<body>
+	</body>
+</html>

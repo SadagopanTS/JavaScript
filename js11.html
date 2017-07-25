@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form and Javascript !!!</title>
+		<script type="text/javascript">
+			function fnprint(){
+				if ((document.login.unm.value != "") && (document.login.pwd.value !=""))
+				{
+					var x= document.login.unm.value +" " + document.login.pwd.value ;
+					alert (x);
+				}
+				else
+				{
+					alert ("Either Username or Password is blank");
+				}
+			}
+		</script>	
+	</head>
+	<body>
+		<form name="login">
+			Username : <input type="text" name="unm"> <br />
+			Password : <input type="password" name="pwd"> <br />
+			<input type="button" value="Submit" onClick="fnprint()"> <br />
+		</form>
+	</body>
+</html>
